@@ -1,0 +1,21 @@
+# for Python
+__pycache__
+*.pyc
+
+
+# for pyCharm
+**/.idea/workspace.xml
+**/.idea/misc.xml
+**/.idea/modules.xml
+**/.idea/dictionaries
+**/.idea/watcherTasks.xml
+**/.idea/codeStyleSettings.xml
+**/.idea/codeStyles
+**/.idea/inspectionProfiles
+**/.idea/webServers.xml
+
+
+/data/db
+/data/log
+/data/etc/web.ini
+/www/site/static/download
