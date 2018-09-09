@@ -66,7 +66,7 @@
                 </div>
 
                 <hr/>
-                <p><span class="important">当您在使用 teleport 过程中遇到问题时，请首先仔细阅读<a href="http://docs.tp4a.com/" target="_blank"> 在线文档 </a>，或者查阅<a href="https://github.com/eomsoft/teleport/issues" target="_blank">bug列表</a>，看看是否有人遇到相同的问题。</span>在无法找到问题解答时，再到QQ群中提问。当您在QQ群中进行问题咨询时，请注意文明、礼貌，大家会热情地解答。</p>
+                <p><span class="important">当您在使用 teleport 过程中遇到问题时，请首先仔细阅读<a href="https://docs.tp4a.com/" target="_blank"> 在线文档 </a>，或者查阅<a href="https://github.com/tp4a/teleport/issues" target="_blank">bug列表</a>，看看是否有人遇到相同的问题。</span>在无法找到问题解答时，再到QQ群中提问。当您在QQ群中进行问题咨询时，请注意文明、礼貌，大家会热情地解答。</p>
                 <p>您可以这样：</p>
                 <ul>
                     <li><i class="fa fa-check-circle-o fa-fw yes"></i> 无法远程连接ssh，我检查了网络和防火墙，没有问题，直接连接也正常，通过tp连就报100错，求救！</li>
@@ -103,12 +103,12 @@
                 <hr/>
 
                 <ul>
-                    <li><i class="fa fa-arrow-right"></i> <a href="http://docs.tp4a.com/" target="_blank"> Teleport 在线文档</a></li>
-                    <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/eomsoft/teleport" target="_blank"> Teleport 源代码（github）</a></li>
-                    <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/eomsoft/teleport/issues" target="_blank"> 提交bug和建议</a></li>
-                    <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/eomsoft/teleport/projects/1" target="_blank"> 正在做和即将做的事情</a></li>
-                    <li><i class="fa fa-arrow-right"></i> QQ群：482010624（500人群，已满）</li>
-                    <li><i class="fa fa-arrow-right"></i> QQ群：613177870（500人群）</li>
+                    <li><i class="fa fa-arrow-right"></i> <a href="https://docs.tp4a.com/" target="_blank"> Teleport 在线文档</a></li>
+                    <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport" target="_blank"> Teleport 源代码（github）</a></li>
+                    <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport/issues" target="_blank"> 提交bug和建议</a></li>
+                    <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport/projects/1" target="_blank"> 正在做和即将做的事情</a></li>
+                    <li><i class="fa fa-arrow-right"></i> QQ群：482010624（100人群）</li>
+                    <li><i class="fa fa-arrow-right"></i> QQ群：613177870（100人群）</li>
                     <li><i class="fa fa-arrow-right"></i> 邮箱：support@tp4a.com</li>
                 </ul>
             </div>

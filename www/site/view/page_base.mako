@@ -21,7 +21,6 @@
     <link href="${ static_url('plugins/bootstrap/css/bootstrap.min.css') }" rel="stylesheet" type="text/css"/>
     <link href="${ static_url('plugins/font-awesome/css/font-awesome.min.css') }" rel="stylesheet">
     <link href="${ static_url('plugins/gritter/css/jquery.gritter.css') }" rel="stylesheet">
-    ##     <link href="${ static_url('css/main.css') }" rel="stylesheet" type="text/css"/>
         <%block name="extend_css"/>
     <%block name="embed_css"/>
     <%block name="pre_embed_js"/>
@@ -43,7 +42,7 @@
                     <li><a href="/">首页</a></li>
                     <li><a href="/download">下载</a></li>
                     <li><a href="/donate">捐赠</a></li>
-                    <li><a href="http://docs.tp4a.com/" target="_blank">在线文档</a></li>
+                    <li><a href="https://docs.tp4a.com/" target="_blank">在线文档</a></li>
                     <li><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1"><i class="fa fa-qq"></i> 交流群：613177870</a></li>
                 </ul>
             </nav>
@@ -63,26 +62,18 @@
 
         <div class="row">
 
-            ##             <div class="footer_contract">
-
             <div class="col-md-9">
                 <dl>
                     <dt><span class="fa fa-send-o"></span> 联系我们</dt>
                     <dd><span class="fa fa-support fa-fw"></span> <a href="/support">获取帮助</a></dd>
                     <dd><span class="fa fa-qq fa-fw"></span> QQ：6674718</dd>
-##                     <dd><span class="fa fa-envelope-o fa-fw"></span> 邮箱：support@eomsoft.net</dd>
-##                     <dd><span class="fa fa-phone fa-fw"></span> 电话：13918346602</dd>
-##                     <dd><span class="fa fa-home fa-fw"></span> 地址：上海市浦东新区浦东大道惠扬大厦6号楼2105室</dd>
                 </dl>
             </div>
-
-            ##             <div class="footer_social">
 
             <div class="col-md-3">
                 <dl>
                     <dt><span class="fa fa-arrows-alt"></span> 社区</dt>
                     <dd><span class="fa fa-qq"></span> 交流群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1">613177870</a></dd>
-##                     <dd><span class="fa fa-comments"></span> 论坛：<a href="http://bbs.eomsoft.net/" target="_blank">点击进入</a></dd>
                 </dl>
             </div>
 
@@ -91,8 +82,7 @@
 
             <div class="col-md-12">
                 <div class="copyright">
-##                     <span class="left">&copy 2015~2017 - eomsoft.net - 触维软件</span>
-                    <span class="left">&copy 2015~2018 - TELEPORT</span>
+                    <span class="left">&copy 2015~2018 - TP4A</span>
                     <span class="right">京ICP-14049185-5</span>
                     <div class="clear"></div>
                 </div>

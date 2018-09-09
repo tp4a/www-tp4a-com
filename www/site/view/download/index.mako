@@ -114,7 +114,7 @@
                 <h3>源代码</h3>
                 <div class="row">
                     <div class="col-md-12">
-                        <a class="dl" href="https://github.com/eomsoft/teleport" target="_blank"><i class="fa fa-github-alt"></i> https://github.com/eomsoft/teleport <i class="fa fa-share"></i></a>
+                        <a class="dl" href="https://github.com/tp4a/teleport" target="_blank"><i class="fa fa-github-alt"></i> https://github.com/tp4a/teleport <i class="fa fa-share"></i></a>
                     </div>
                 </div>
 
@@ -123,13 +123,13 @@
 
             <hr class="section"/>
             <h2><i class="fa fa-bug"></i> 已知问题</h2>
-            <p>如果在使用过程中遇到问题，可以到QQ交流群中进行讨论。发现bug时，<a href="https://github.com/eomsoft/teleport/issues" target="_blank">请到github提交bug</a>，当然，有新的功能需求或者建议，也可以到这里提交。</p>
-            <p>如欲了解Teleport的开发情况，可以查看<a href="https://github.com/eomsoft/teleport/projects/1" target="_blank">开发进度</a>，或者了解<a href="https://github.com/eomsoft/teleport/milestones" target="_blank">里程碑计划</a>。</p>
+            <p>如果在使用过程中遇到问题，可以到QQ交流群中进行讨论。发现bug时，<a href="https://github.com/tp4a/teleport/issues" target="_blank">请到github提交bug</a>，当然，有新的功能需求或者建议，也可以到这里提交。</p>
+            <p>如欲了解Teleport的开发情况，可以查看<a href="https://github.com/tp4a/teleport/projects/1" target="_blank">开发进度</a>，或者了解<a href="https://github.com/tp4a/teleport/milestones" target="_blank">里程碑计划</a>。</p>
             <hr/>
             <ul>
                 <li>因使用系统自带RDP客户端(mstsc)进行远程连接生成的录像无法播放，暂时屏蔽了对mstsc的支持。</li>
                 <li>助手程序不支持Linux，暂时未考虑开发Linux版本的助手。</li>
-                <li>不支持RDP的“网络级身份验证”，如果日志页面出现“协议不支持”的错误，请参考<a href="https://github.com/eomsoft/teleport/wiki/Q&A">此说明</a>。</li>
+                <li>不支持RDP的“网络级身份验证”，如果日志页面出现“协议不支持”的错误，请参考<a href="https://docs.tp4a.com/faq/">此说明</a>。</li>
                 <li>RDP客户端使用FreeRDP，因此FreeRDP本身的问题仍然存在，例如无法在本地与远程主机之间进行复制粘贴操作！（可以映射本地驱动器到远程主机，然后在远程主机上直接复制粘贴文件）</li>
                 <li>beta版中部分功能尚未开发完成，开发计划已列入日程，请等待。</li>
             </ul>
