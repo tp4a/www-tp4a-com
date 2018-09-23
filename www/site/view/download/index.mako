@@ -98,7 +98,7 @@
                 <hr/>
                 <h3>服务端安装包</h3>
                 <script>show_last_ver([
-                    {os:'linux', f:'teleport-server-linux-x64-3.0.2.9.tar.gz'}
+                    {os:'linux', f:'teleport-server-linux-x64-3.1.0.tar.gz'}
                 ]);</script>
 
 
@@ -138,6 +138,22 @@
             <hr class="section"/>
             <div class="history">
                 <h2><i class="fa fa-clock-o"></i> 更新历史</h2>
+
+
+                <hr/>
+                <h3>2018-09-24</h3>
+                <h4>服务端 v3.1.0</h4>
+                <script>show_dl([{os:'linux', f:'teleport-server-linux-x64-3.1.0.tar.gz'}]);</script>
+                <ul>
+                    <li>增强：Python内核升级到3.7.0，同时更新了用到的python扩展库。</li>
+                    <li>改进：绑定身份验证器之后，除非先解绑，否则不允许再次绑定。</li>
+                    <li>改进：管理员可以为用户解绑身份验证器，或者管理员为用户重置密码时自动解除绑定。</li>
+                    <li>修正：网络设备（交换机/路由器）无法使用telnet协议登录。</li>
+                    <li>修正：网络设备（运行SSHv1.99）无法使用SSH协议登录。</li>
+                    <li>修正：邮件服务能够兼容Exchange 2016了。</li>
+                    <li>修正：从用户组中移除用户时可能会因数据库操作失败而无法进行。</li>
+                    <li>修正：页面超时后执行批量导入会失败，但失败的错误提示不够明确。</li>
+                </ul>
 
 
                 <hr/>
