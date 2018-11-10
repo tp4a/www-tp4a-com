@@ -1,0 +1,84 @@
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides:          $$EOM_WEB_NAME$$
+# Required-Start:    $local_fs $remote_fs $network $syslog mysql
+# Required-Stop:     $local_fs $remote_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the $$EOM_WEB_NAME$$ daemon
+# Description:       starts $$EOM_WEB_NAME$$ using start-stop-daemon
+### END INIT INFO
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+NAME=$$EOM_WEB_NAME$$
+DESC=$$EOM_WEB_NAME$$
+WEB_MAIN=$$EOM_WEB_MAIN_FILE$$
+
+test -f $WEB_MAIN || exit 0
+
+set -e
+
+. /lib/lsb/init-functions
+
+case "$1" in
+   start)
+      echo -n "starting $DESC..."
+
+      result=$( ps -ef | grep "$WEB_MAIN" | grep -v grep | wc -l )
+      if [ $result -gt 0 ]; then
+         echo "$NAME is running. skip."
+         #echo ""
+         exit 0
+      else
+         python3 "$WEB_MAIN" --start
+         echo "done."
+         echo ""
+         exit 1
+      fi
+      ;;
+
+   stop)
+      echo -n "stopping $DESC..."
+
+      result=$( ps -ef | grep "$WEB_MAIN" | grep -v grep | wc -l )
+      if [ $result -gt 0 ]; then
+         ps -ax | grep "$WEB_MAIN" | grep -v grep | kill -9 `awk '{print $1}'`
+         echo "done."
+         exit 0
+      else
+         echo "$NAME is not running."
+         exit 1
+      fi
+      ;;
+
+   restart)
+      result=$( ps -ef | grep "$WEB_MAIN" | grep -v grep | wc -l )
+      if [ $result -gt 0 ]; then
+         echo "stopping $DESC..."
+         ps -ax | grep "$WEB_MAIN" | grep -v grep | kill -9 `awk '{print $1}'`
+         sleep 1
+      fi
+
+      echo -n "starting $DESC..."
+      python3 "$WEB_MAIN" --start
+      echo "done."
+      ;;
+
+   status)
+      result=$( ps -ef | grep "$WEB_MAIN" | grep -v grep | wc -l )
+      if [ $result -gt 0 ]; then
+         echo "$NAME is running."
+         exit 0
+      else
+         echo "$NAME is not running."
+         exit 1
+      fi
+      ;;
+   *)
+      echo "Usage: $NAME {start|stop|restart|status}" >&2
+      exit 1
+      ;;
+esac
+
+exit 0
