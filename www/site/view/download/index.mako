@@ -98,15 +98,15 @@
                 <hr/>
                 <h3>服务端安装包</h3>
                 <script>show_last_ver([
-                    {os:'linux', f:'teleport-server-linux-x64-3.1.0.tar.gz'}
+                    {os:'linux', f:'teleport-server-linux-x64-3.2.0.tar.gz'}
                 ]);</script>
 
 
                 <hr/>
                 <h3>客户端助手</h3>
                 <script>show_last_ver([
-                    {os:'windows', f:'teleport-assist-windows-3.0.1.6.exe'},
-                    {os:'apple', f:'teleport-assist-macos-3.0.1.6.dmg'}
+                    {os:'windows', f:'teleport-assist-windows-3.2.0.exe'},
+                    {os:'apple', f:'teleport-assist-macos-3.2.0.dmg'}
                 ]);</script>
 
 
@@ -127,17 +127,48 @@
             <p>如欲了解Teleport的开发情况，可以查看<a href="https://github.com/tp4a/teleport/projects/1" target="_blank">开发进度</a>，或者了解<a href="https://github.com/tp4a/teleport/milestones" target="_blank">里程碑计划</a>。</p>
             <hr/>
             <ul>
+                <li>从3.2.0版本开始，安装部署环境需要CentOS 7.0（或等效内核版本的Linux）及以上版本。</li>
                 <li>因使用系统自带RDP客户端(mstsc)进行远程连接生成的录像无法播放，暂时屏蔽了对mstsc的支持。</li>
                 <li>助手程序不支持Linux，暂时未考虑开发Linux版本的助手。</li>
                 <li>不支持RDP的“网络级身份验证”，如果日志页面出现“协议不支持”的错误，请参考<a href="https://docs.tp4a.com/faq/">此说明</a>。</li>
                 <li>RDP客户端使用FreeRDP，因此FreeRDP本身的问题仍然存在，例如无法在本地与远程主机之间进行复制粘贴操作！（可以映射本地驱动器到远程主机，然后在远程主机上直接复制粘贴文件）</li>
-                <li>beta版中部分功能尚未开发完成，开发计划已列入日程，请等待。</li>
             </ul>
 
 
             <hr class="section"/>
             <div class="history">
                 <h2><i class="fa fa-clock-o"></i> 更新历史</h2>
+
+
+                <hr/>
+                <h3>2019-01-08</h3>
+                <h4>服务端 v3.2.0</h4>
+                <script>show_dl([{os:'linux', f:'teleport-server-linux-x64-3.2.0.tar.gz'}]);</script>
+                <ul>
+                    <li>增强：支持LDAP用户导入、登录验证。</li>
+                    <li>增强：部分第三方库同步升级到新版本。</li>
+                    <li>改进：调整认证码图像的生成机制，提高识别度。</li>
+                    <li>改进：调整连接SSL邮件服务器功能，提升兼容性（如Exchange/163邮箱等）。</li>
+                    <li>修正：一些SSH会话无法正常连接，也无法正常中断，导致在线会话列表中出现“无法中断”的会话。</li>
+                    <li>修正：一处导致核心服务崩溃的问题（mongoose-http-client多线程问题）。</li>
+                    <li>修正：系统设置/连接控制/会话超时 选项设置为0时保存设置报参数错误的问题。</li>
+                    <li>修正：核心服务的API接口处理POST数据时执行了多余的URL解码。</li>
+                    <li>修正：检查用户名合法性，防止SQL注入攻击。</li>
+                    <li>修正：SSH远程连接rz命令无法工作。</li>
+                </ul>
+
+                <h4>助手 v3.2.0</h4>
+                <script>show_dl([{os:'windows', f:'teleport-assist-windows-3.2.0.exe'}, {os:'apple', f:'teleport-assist-macos-3.2.0.dmg'}]);</script>
+                <ul>
+                    <li>增强：[macOS] 支持SecureCRT做SSH客户端，SecureFX做SFTP客户端。</li>
+                    <li>改进：[macOS] 命令行方式的SSH远程连接（Terminal/iTerm2为客户端），可以自动回车完成登录了。</li>
+                    <li>增强：[Win] 支持URL-Protocol方式启动客户端，适配客户机多用户登录的情况（horizonlin）。</li>
+                    <li>改进：以HTTPS方式访问web界面时，也能与助手通讯了。</li>
+                    <li>修正：统一助手工具的图标；</li>
+                </ul>
+
+
+
 
 
                 <hr/>

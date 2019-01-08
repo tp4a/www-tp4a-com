@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="tp4a">
+  <component name="PublishConfigData" serverName="www.tp4a.com" showNewOnTargetInSync="false">
     <serverData>
-      <paths name="tp4a">
+      <paths name="www.tp4a.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/../.." web="/" />
+            <mapping deploy="/static" local="$PROJECT_DIR$/static" web="/" />
+            <mapping deploy="/view" local="$PROJECT_DIR$/view" web="/" />
+            <mapping deploy="/webroot" local="$PROJECT_DIR$/webroot" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/../../resource" />
-            <excludedPath local="true" path="$PROJECT_DIR$/../packages/packages-darwin" />
-            <excludedPath local="true" path="$PROJECT_DIR$/../packages/packages-windows" />
-          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

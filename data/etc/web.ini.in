@@ -23,8 +23,7 @@ log-level=2
 
 ; 0/1. default to 0.
 ; in debug mode, `log-level` force to 0 and trace call stack when exception raised.
-; debug-mode=0
-debug-mode=1
+debug-mode=0
 
 
 [database]
