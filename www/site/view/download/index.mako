@@ -98,7 +98,7 @@
                 <hr/>
                 <h3>服务端安装包</h3>
                 <script>show_last_ver([
-                    {os:'linux', f:'teleport-server-linux-x64-3.2.0.tar.gz'}
+                    {os:'linux', f:'teleport-server-linux-x64-3.2.2.tar.gz'}
                 ]);</script>
 
 
@@ -138,6 +138,24 @@
             <hr class="section"/>
             <div class="history">
                 <h2><i class="fa fa-clock-o"></i> 更新历史</h2>
+
+
+                <hr/>
+                <h3>2019-01-23</h3>
+                <h4>服务端 v3.2.2</h4>
+                <script>show_dl([{os:'linux', f:'teleport-server-linux-x64-3.2.2.tar.gz'}]);</script>
+                <ul>
+                    <li>增强：加入对所需助手版本的检查。</li>
+                    <li>改进：对安装到非默认安装路径下的版本也可正常升级了。</li>
+                    <li>修正：在Linux内核4.18+的系统上安装，WEB服务无法启动。</li>
+                    <li>修正：登录界面刚显示出来就点击密码输入框，短时间后焦点会自动跳到用户名输入框。</li>
+                    <li>修正：导入LDAP用户时，如果之前未导入过LDAP用户，会提示参数错误而无法导入。</li>
+                    <li>修正：用户列表底部的批量禁用功能不正常，只能在右边栏一条条的禁用，但是可以批量解禁。（<a href="https://github.com/tp4a/teleport/issues/144" target="_blank">issue#144</a>）</li>
+                    <li>修正：设置了用户密码有效期，升级后可能无法登陆。修正方法：实现了过期密码修改功能。（<a href="https://github.com/tp4a/teleport/issues/145" target="_blank">issue#145</a>）</li>
+                    <li>修正：移除测试代码（导入LDAP用户的通知邮件会发送给测试邮箱而非用户邮箱）。</li>
+                    <li>修正：某个具有运维权限的用户A，在抓取另一个运维用户B的前端页面后，可以访问未授权给用户A的远程主机。</li>
+                    <li>修正：从3.0.x技术预览版开始使用的系统，可以平滑升级了（系统升级后引导至数据库升级界面进行操作）。</li>
+                </ul>
 
 
                 <hr/>
