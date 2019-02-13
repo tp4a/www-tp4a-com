@@ -107,9 +107,9 @@
                     <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport" target="_blank"> Teleport 源代码（github）</a></li>
                     <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport/issues" target="_blank"> 提交bug和建议</a></li>
                     <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport/projects/1" target="_blank"> 正在做和即将做的事情</a></li>
-                    <li><i class="fa fa-arrow-right"></i> QQ群：482010624（100人群）</li>
-                    <li><i class="fa fa-arrow-right"></i> QQ群：613177870（100人群）</li>
-                    <li><i class="fa fa-arrow-right"></i> 邮箱：support@tp4a.com</li>
+                    <li><i class="fa fa-arrow-right"></i> QQ群：482010624（1000人群）</li>
+                    <li><i class="fa fa-arrow-right"></i> QQ群：613177870（1000人群）</li>
+##                     <li><i class="fa fa-arrow-right"></i> 邮箱：support@tp4a.com</li>
                 </ul>
             </div>
 
