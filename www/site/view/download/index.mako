@@ -105,8 +105,8 @@
                 <hr/>
                 <h3>客户端助手</h3>
                 <script>show_last_ver([
-                    {os:'windows', f:'teleport-assist-windows-3.2.0.exe'},
-                    {os:'apple', f:'teleport-assist-macos-3.2.0.dmg'}
+                    {os:'windows', f:'teleport-assist-windows-3.2.2.exe'},
+                    {os:'apple', f:'teleport-assist-macos-3.2.2.dmg'}
                 ]);</script>
 
 
@@ -138,6 +138,17 @@
             <hr class="section"/>
             <div class="history">
                 <h2><i class="fa fa-clock-o"></i> 更新历史</h2>
+
+
+                <hr/>
+                <h3>2019-01-26</h3>
+                <h4>助手 v3.2.2</h4>
+                <script>show_dl([{os:'windows', f:'teleport-assist-windows-3.2.2.exe'}, {os:'apple', f:'teleport-assist-macos-3.2.2.dmg'}]);</script>
+                <ul>
+                    <li>改进：重新颁发自签名证书为IP证书(127.0.0.1)，解决助手配合HTTPS方式访问teleport服务器时找不到助手的问题。</li>
+                    <li>修正：[win] 本地监听地址改为127.0.0.1，解决某些系统启用了IPv6时助手无法被检测到的问题。</li>
+                    <li>修正：[macOS] 本地监听地址改为127.0.0.1，解决某些macOS未映射localhost导致无法启动助手的问题。</li>
+                </ul>
 
 
                 <hr/>
