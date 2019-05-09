@@ -19,3 +19,4 @@ __pycache__
 /data/log
 /data/etc/web.ini
 /www/site/static/download
+/data/ip-info.txt

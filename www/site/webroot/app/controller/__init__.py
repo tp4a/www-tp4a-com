@@ -34,7 +34,7 @@ controllers = [
     (r'/support/', support.IndexHandler),
     (r'/support', support.IndexHandler),
 
-    (r'/util/myip', util.MyIpHandler),
+    (r'/util/myip/(.*)/(.*)', util.MyIpHandler),
 
     # 最后加入一个 catch all 的handler，展示404错误
     (r'/.*', index.CatchAllHandler),
