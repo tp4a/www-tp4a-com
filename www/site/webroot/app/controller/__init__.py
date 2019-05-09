@@ -4,6 +4,7 @@ from . import download
 from . import support
 from . import index
 from . import donate
+from . import util
 
 
 __all__ = ['controllers']
@@ -32,6 +33,8 @@ controllers = [
     # ====================================================
     (r'/support/', support.IndexHandler),
     (r'/support', support.IndexHandler),
+
+    (r'/util/myip', util.MyIpHandler),
 
     # 最后加入一个 catch all 的handler，展示404错误
     (r'/.*', index.CatchAllHandler),
