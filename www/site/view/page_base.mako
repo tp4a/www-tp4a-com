@@ -40,11 +40,11 @@
             <nav class="nav clearfix">
                 <ul>
                     <li><a href="/">首页</a></li>
-                    ##                     <li><a href="/download">下载</a></li>
-
+                    <li><a href="/download">下载</a></li>
                     <li><a href="/donate">捐赠</a></li>
+                    <li><a href="/support">帮助</a></li>
                     <li><a href="https://docs.tp4a.com/" target="_blank">在线文档</a></li>
-                    ##                     <li><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1"><i class="fa fa-qq"></i> 交流群：613177870</a></li>
+                    <li><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1"><i class="fa fa-qq"></i> 交流群：613177870</a></li>
                 </ul>
             </nav>
 
