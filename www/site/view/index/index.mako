@@ -151,7 +151,7 @@
         </div>
 
         <div class="box info">
-            ApexLiu个人网站，京ICP备14049185号-7
+            ApexLiu个人网站，<a href="https://beian.miit.gov.cn" target="_blank">京ICP备14049185号-7</a>
         </div>
     </div>
 </div>

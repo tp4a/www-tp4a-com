@@ -85,8 +85,8 @@
 
             <div class="col-md-12">
                 <div class="copyright">
-                    <span class="left">&copy 2015~2019 - TP4A</span>
-                    <span class="right">京ICP备14049185号-7</span>
+                    <span class="left">&copy 2015~2021 - TP4A</span>
+                    <span class="right"><a href="https://beian.miit.gov.cn">京ICP备14049185号-7</a></span>
                     <div class="clear"></div>
                 </div>
             </div>
