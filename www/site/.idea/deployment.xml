@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="www.tp4a.com" showNewOnSourceInSync="false" showNewOnTargetInSync="false" showExcludedInSync="true">
+  <component name="PublishConfigData" serverName="tp4a.com" showNewOnSourceInSync="false" showNewOnTargetInSync="false" showExcludedInSync="true">
     <serverData>
-      <paths name="www.tp4a.com">
+      <paths name="tp4a.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/static" local="$PROJECT_DIR$/static" web="/" />
-            <mapping deploy="/view" local="$PROJECT_DIR$/view" web="/" />
-            <mapping deploy="/webroot" local="$PROJECT_DIR$/webroot" web="/" />
+            <mapping deploy="/www/site" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

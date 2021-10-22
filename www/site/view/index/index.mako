@@ -43,7 +43,7 @@
 
         .box ul li {
             ## margin-left: 30px;
-            font-size: 13px;
+            ## font-size: 13px;
             list-style: none;
             line-height: 24px;
             ## border-bottom: 1px dashed #dedede;

@@ -24,14 +24,15 @@
 
         .box ul li {
             ## margin-left: 30px;
-            font-size: 13px;
+            ## font-size: 13px;
             list-style: none;
-            line-height: 24px;
+            line-height: 28px;
             ## border-bottom: 1px dashed #dedede;
         }
         .memo {
             padding-left: 18px;
             font-style: italic;
+            margin-bottom: 10px;
         }
 
         .important {
@@ -107,9 +108,10 @@
                     <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport" target="_blank"> Teleport 源代码（github）</a></li>
                     <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport/issues" target="_blank"> 提交bug和建议</a></li>
                     <li><i class="fa fa-arrow-right"></i> <a href="https://github.com/tp4a/teleport/projects/1" target="_blank"> 正在做和即将做的事情</a></li>
-##                     <li><i class="fa fa-arrow-right"></i> QQ群：482010624（1000人群）</li>
-                    <li><i class="fa fa-arrow-right"></i> <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1"> QQ交流群：613177870</a></li>
-##                     <li><i class="fa fa-arrow-right"></i> 邮箱：support@tp4a.com</li>
+                    <li><i class="fa fa-arrow-right"></i> <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=kQuWdRoGZDX49Uievj2AkSc7acMfa2K_&jump_from=webapi"> QQ交流群：613177870</a></li>
+##                     <li><i class="fa fa-arrow-right"></i> QQ交流群：613177870 (2000人群，已满)</li>
+##                     <li><i class="fa fa-arrow-right"></i> <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=Tdm9jmJzVwsnGsv34EVC5t8-Av-ZsXUQ&jump_from=webapi"> QQ交流群：331273570</a></li>
+                    ##                     <li><i class="fa fa-arrow-right"></i> 邮箱：support@tp4a.com</li>
                 </ul>
             </div>
 

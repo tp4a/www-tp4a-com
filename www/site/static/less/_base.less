@@ -1,16 +1,30 @@
 @charset "utf-8";
 
+@font-face {
+	font-family:'SF Pro Text';
+	font-style:normal;
+	font-weight:400;
+	src:url("/static/css/fonts/sf-pro-text_regular.woff2");
+}
+@font-face {
+	font-family:'SF Pro Text';
+	font-style:normal;
+	font-weight:700;
+	src:url("/static/css/fonts/sf-pro-text_bold.woff2");
+}
+
 @back-color: #333;
 @text-color: #333;
 
 @header-height: 80px;
 
-@font-family-normal: "Open Sans", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif;
+// @font-family-normal: "Helvetica Neue", "Microsoft YaHei", "微软雅黑", Helvetica, "Open Sans", Arial, sans-serif;
+@font-family-normal: "SF Pro Text","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
 @font-family-mono: Consolas, Lucida Console, Monaco, Courier, 'Courier New', monospace;
 
 body {
 	font-family: @font-family-normal;
-	font-size: 13px;
+	font-size: 15px;
 	//background-color: @page-bg;
 	//color: @page-color;
 	background-color: @back-color;

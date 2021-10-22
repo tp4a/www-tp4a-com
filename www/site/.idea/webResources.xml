@@ -2,20 +2,6 @@
 <project version="4">
   <component name="WebResourcesPaths">
     <contentEntries>
-      <entry url="file://$PROJECT_DIR$/../../data">
-        <entryData>
-          <resourceRoots>
-            <path value="file://$PROJECT_DIR$/../../data" />
-          </resourceRoots>
-        </entryData>
-      </entry>
-      <entry url="file://$PROJECT_DIR$/../packages">
-        <entryData>
-          <resourceRoots>
-            <path value="file://$PROJECT_DIR$/../packages" />
-          </resourceRoots>
-        </entryData>
-      </entry>
       <entry url="file://$PROJECT_DIR$/static">
         <entryData>
           <resourceRoots>

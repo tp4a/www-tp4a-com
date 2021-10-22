@@ -18,6 +18,8 @@
     <meta name="description" content="Teleport是一款开源的堡垒机系统，具有简单易用、易于集成等特性。">
     <link rel="shortcut icon" href="${ static_url('favicon.png') }">
 
+##     <link rel="stylesheet" href="https://www.apple.com.cn/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3">
+
     <link href="${ static_url('plugins/bootstrap/css/bootstrap.min.css') }" rel="stylesheet" type="text/css"/>
     <link href="${ static_url('plugins/font-awesome/css/font-awesome.min.css') }" rel="stylesheet">
     <link href="${ static_url('plugins/gritter/css/jquery.gritter.css') }" rel="stylesheet">
@@ -44,7 +46,8 @@
                     <li><a href="/donate">捐赠</a></li>
                     <li><a href="/support">帮助</a></li>
                     <li><a href="https://docs.tp4a.com/" target="_blank">在线文档</a></li>
-                    <li><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1"><i class="fa fa-qq"></i> 交流群：613177870</a></li>
+                    <li><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=kQuWdRoGZDX49Uievj2AkSc7acMfa2K_&jump_from=webapi"><i class="fa fa-qq"></i> 交流群：613177870</a></li>
+##                     <li><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=Tdm9jmJzVwsnGsv34EVC5t8-Av-ZsXUQ&jump_from=webapi"><i class="fa fa-qq"></i> 交流群：331273570</a></li>
                 </ul>
             </nav>
 
@@ -76,7 +79,8 @@
                 <dl>
                     ##                     <dt><span class="fa fa-arrows-alt"></span> 社区</dt>
 
-                    <dd><span class="fa fa-qq"></span> 交流群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c7508f94737bb8a885b262e66cfeaf9d643096cea05c07293db1dc8d213777e1">613177870</a></dd>
+                    <dd><span class="fa fa-qq"></span> 交流群：<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=kQuWdRoGZDX49Uievj2AkSc7acMfa2K_&jump_from=webapi">613177870</a></dd>
+##                     <dd><span class="fa fa-qq"></span> 交流群：<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=Tdm9jmJzVwsnGsv34EVC5t8-Av-ZsXUQ&jump_from=webapi">331273570</a></dd>
                 </dl>
             </div>
 

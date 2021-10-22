@@ -34,6 +34,9 @@ controllers = [
     (r'/support/', support.IndexHandler),
     (r'/support', support.IndexHandler),
 
+    # /util/myip/update/beijing_home_pc
+    # /util/myip/query/beijing_home_pc
+    # /util/myip/remove/beijing_home_pc
     (r'/util/myip/(.*)/(.*)', util.MyIpHandler),
 
     # 最后加入一个 catch all 的handler，展示404错误
