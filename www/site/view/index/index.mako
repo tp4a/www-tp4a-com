@@ -1,6 +1,6 @@
 <%!
     # -*- coding: utf-8 -*-
-    page_title_ = 'Teleport'
+    page_title_ = '走向成功 '
     page_name_ = 'index'
 %>
 <%inherit file="../page_base.mako"/>
@@ -85,7 +85,7 @@
 <div class="content_box">
     <div class="container">
         <div class="box">
-
+            <p>走向成功</p>
             <div>
                 <div class="row">
                     <div class="col-md-9">

@@ -54,11 +54,21 @@
         }
 
         .history ul {
-            margin-left: 30px;
+            margin: 0 30px;
         }
 
         .history .dl {
             margin-left: 50px;
+        }
+
+        .history .alert {
+            margin: 0 30px 10px 50px;
+            border:1px solid #00ffff;
+            color: #a22119;
+            background-color: #ffeeee;
+            border-radius: 3px;
+            border: 1px solid #ffcccc;
+            padding: 5px 5px;
         }
 
         .important {
@@ -92,21 +102,18 @@
                     </div>
                 </div>
 
-                <p class="important">注意1：V3系列版本与V2系列版本数据库不兼容，建议在新的服务器或虚拟机上安装新版本使用！</p>
-                <p class="important">注意2：请配合最新版本助手程序使用！</p>
-
                 <hr/>
                 <h3>服务端安装包</h3>
                 <script>show_last_ver([
-                    {os:'linux', f:'teleport-server-linux-x64-3.2.2.tar.gz'}
+                    {os:'linux', f:'teleport-server-linux-x64-3.6.3-b2.tar.gz'}
                 ]);</script>
 
 
                 <hr/>
                 <h3>客户端助手</h3>
                 <script>show_last_ver([
-                    {os:'windows', f:'teleport-assist-windows-3.2.2.exe'},
-                    {os:'apple', f:'teleport-assist-macos-3.2.2.dmg'}
+                    {os:'windows', f:'teleport-assist-windows-3.6.3.exe'},
+                    {os:'apple', f:'teleport-assist-macos-3.6.3.dmg'}
                 ]);</script>
 
 
@@ -128,7 +135,6 @@
             <hr/>
             <ul>
                 <li>从3.2.0版本开始，安装部署环境需要CentOS 7.0（或等效内核版本的Linux）及以上版本。</li>
-                <li>因使用系统自带RDP客户端(mstsc)进行远程连接生成的录像无法播放，暂时屏蔽了对mstsc的支持。</li>
                 <li>助手程序不支持Linux，暂时未考虑开发Linux版本的助手。</li>
                 <li>不支持RDP的“网络级身份验证”，如果日志页面出现“协议不支持”的错误，请参考<a href="https://docs.tp4a.com/faq/">此说明</a>。</li>
                 <li>RDP客户端使用FreeRDP，因此FreeRDP本身的问题仍然存在，例如无法在本地与远程主机之间进行复制粘贴操作！（可以映射本地驱动器到远程主机，然后在远程主机上直接复制粘贴文件）</li>
@@ -138,6 +144,55 @@
             <hr class="section"/>
             <div class="history">
                 <h2><i class="fa fa-clock-o"></i> 更新历史</h2>
+
+
+                <hr/>
+                <h3>2022-06-02</h3>
+                <h4>服务端 v3.6.3 beta2</h4>
+                <script>show_dl([{os:'linux', f:'teleport-server-linux-x64-3.6.3-b2.tar.gz'}]);</script>
+                <div class="alert"><i class="fa fa-warning"></i> 特别注意: 此为beta版本，用于功能测试，不建议用于生产环境。</div>
+                <ul>
+                    <li>新增：允许用户为已授权的远程连接生成临时远程账号(90天有效)，在客户端软件中设置使用此远程账号，可以不用登录到TP-WEB，直接进行远程（但仍然会进行TP审计录像）；</li>
+                    <li>修正：LDAP设置时，LDAP服务器为二级域名时无法保存设置；</li>
+                    <li>改进：重构与助手通讯的机制，使用websocket，避免出现无法检测到助手的问题；</li>
+                    <li>改进：优化SSH连接时会话ID无效的处理方式，防止SFTP客户端反复重连可能导致核心服务假死的情况；</li>
+                    <li>改进：审计页面支持过滤搜索；</li>
+                    <li>改进：允许SSH远程连接时手动输入密码；</li>
+                </ul>
+                <h4>助手 v3.6.3</h4>
+                <script>show_dl([{os:'windows', f:'teleport-assist-windows-3.6.3.exe'}, {os:'apple', f:'teleport-assist-macos-3.6.3.dmg'}]);</script>
+                <div class="alert"><i class="fa fa-warning"></i> 特别注意: 服务端检测助手的实现机制有改变，请配合对应的服务端版本使用。</div>
+                <ul>
+                    <li>改进：采用websocket方式，避免出现安全性增强的浏览器中无法检测到助手的问题；</li>
+                    <li>改进：配合TP服务，允许远程连接时手动输入密码（需要修改助手配置，调整客户端软件命令行参数内容）；</li>
+                    <li>修正：当配置为使用主机名 {host_name} 作为客户端软件窗口标题时，例如SecureCRT，如果主机名中含有中文，客户端软件窗口标题会显示乱码；</li>
+                    <li>修正：TP-WEB配置为域名方式以及 https 方式访问时的一些问题，例如RDP录像无法播放的问题；</li>
+                </ul>
+
+
+
+                <hr/>
+                <h3>2021-08-13</h3>
+                <h4>服务端 v3.5.6 rc6</h4>
+                <script>show_dl([{os:'linux', f:'teleport-server-linux-x64-3.5.6-rc6.tar.gz'}]);</script>
+                <div class="alert"><i class="fa fa-warning"></i> 特别注意: 因录像格式变更，此版本与旧版本3.2.x的录像无法兼容播放，如需保留3.2.x版本的录像，请在独立环境中安装新版本。</div>
+                <ul>
+                    <li>新增：增加使用PING远程主机的方式检查远程主机是否存活(需要修改 tpweb.ini ，在 common 小节中 加入 check-host-alive=1 来开启);</li>
+                    <li>修正：SSH模块使用密钥认证方式进行远程连接时总是提示认证失败;</li>
+                    <li>修正：SSH连接后，超时断开后，客户端可能会反复重连，最终导致核心服务假死;</li>
+                    <li>修正：telnet配置为无用户名密码登录时，总是提示参数错误;</li>
+                    <li>修正：后台配置超时无操作自动断开时，配置为0(即永不超时)，选项不生效;</li>
+                    <li>修正：审计⻚面没有显示用户姓名，仅显示了用户登录账号;</li>
+                    <li>改进：LDAP配置界面增加使用SSL选项，以支持基于SSL连接的LDAP服务;</li>
+                    <li>改进：支持配置无密码的SMTP服务，可用于在公司内部受信任域中环境发送通知邮件;</li>
+                    <li>改进：SSH连接后，cat一个大文件会很慢，有时会导致连接断开;</li>
+                </ul>
+                <h4>助手 v3.5.6</h4>
+                <script>show_dl([{os:'windows', f:'teleport-assist-windows-3.5.6.exe'}, {os:'apple', f:'teleport-assist-macos-3.5.6.dmg'}]);</script>
+                <ul>
+                    <li>改进：助手调用本地客户端，增加 {host_name} 变量，用于在客户端上显示远程主机名称;</li>
+                    <li>改进：Mac版支持RDP录像回放了;</li>
+                </ul>
 
 
                 <hr/>

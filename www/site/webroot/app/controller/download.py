@@ -5,6 +5,7 @@ import hashlib
 from app.base.controller import TPBaseHandler
 
 from app.base.configs import tp_cfg
+from app.base.utils import tp_bytes2human
 
 
 def _calc_sha1(fname):
@@ -14,28 +15,6 @@ def _calc_sha1(fname):
         _hash = sha1obj.hexdigest()
 
     return _hash
-
-
-def _bytes2human(n):
-    """
-    将字节数转换为易读的字符串
-
-    http://code.activestate.com/recipes/578019
-    bytes2human(10000)        '9.8K'
-    bytes2human(100001221)    '95.4M'
-
-    :type n: int
-    :rtype : str
-    """
-    symbols = ('K', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y')
-    prefix = {}
-    for i, s in enumerate(symbols):
-        prefix[s] = 1 << (i + 1) * 10
-    for s in reversed(symbols):
-        if n >= prefix[s]:
-            value = float(n) / prefix[s]
-            return '%.1f%s' % (value, s)
-    return "%sB" % n
 
 
 g_files = dict()
@@ -63,7 +42,7 @@ def _refresh_files(force):
                 continue
 
             file_stat = os.stat(os.path.join(g_dl_path, _name))
-            size_str = _bytes2human(file_stat.st_size)
+            size_str = tp_bytes2human(file_stat.st_size)
 
             g_files[_name] = {'path': full_name, 'size': file_stat.st_size, 'size_str': size_str, 'sha1': _calc_sha1(full_name)}
 

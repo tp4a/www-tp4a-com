@@ -8,7 +8,7 @@ import hashlib
 import threading
 import random
 
-__all__ = ['AttrDict', 'tp_make_dir']
+__all__ = ['AttrDict', 'tp_make_dir', 'tp_bytes2human']
 
 
 class AttrDict(dict):

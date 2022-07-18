@@ -43,7 +43,7 @@
 
         .box ul li {
             ## margin-left: 30px;
-            font-size: 13px;
+            ## font-size: 13px;
             list-style: none;
             line-height: 24px;
             ## border-bottom: 1px dashed #dedede;
@@ -85,7 +85,7 @@
 <div class="content_box">
     <div class="container">
         <div class="box">
-
+            <p>走向成功</p>
             <div>
                 <div class="row">
                     <div class="col-md-9">
