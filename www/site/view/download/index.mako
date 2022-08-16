@@ -103,6 +103,23 @@
                 </div>
 
                 <hr/>
+                <h3 class="important"><i class="fa fa-warning"></i> 安全修复补丁</h3>
+                <p>基于 3.2.2 的补丁</p>
+                <script>show_last_ver([
+                    {os:'linux', f:'tp-hotfix-20220817-3.2.2.tar.gz'}
+                ]);</script>
+                <p>基于 3.5.6-rc6 的补丁</p>
+                <script>show_last_ver([
+                    {os:'linux', f:'tp-hotfix-20220817-3.5.6-rc6.tar.gz'}
+                ]);</script>
+                <p>基于 3.6.3-b2 的补丁</p>
+                <script>show_last_ver([
+                    {os:'linux', f:'tp-hotfix-20220817-3.6.3-b2.tar.gz'}
+                ]);</script>
+
+
+
+                <hr/>
                 <h3>服务端安装包</h3>
                 <script>show_last_ver([
                     {os:'linux', f:'teleport-server-linux-x64-3.6.3-b2.tar.gz'}
@@ -144,6 +161,20 @@
             <hr class="section"/>
             <div class="history">
                 <h2><i class="fa fa-clock-o"></i> 更新历史</h2>
+
+
+                <hr/>
+                <h3>2022-08-16</h3>
+                <h4>安全修复补丁</h4>
+                <div class="alert"><i class="fa fa-warning"></i> 特别注意: 此为高危漏洞修复，请所有用户立即升级并安装安全修复补丁。</div>
+                <ul>
+                    <li>修正：经过特别构造的登录请求，可以以任意账号登入TP系统；</li>
+                    <li>修正：具备审计权限的用户，经过特别构造的请求，可以从TP服务器上获取任意文件。</li>
+                </ul>
+                <script>show_dl([{os:'linux', f:'tp-hotfix-20220817-3.2.2.tar.gz'}]);</script>
+                <script>show_dl([{os:'linux', f:'tp-hotfix-20220817-3.5.6-rc6.tar.gz'}]);</script>
+                <script>show_dl([{os:'linux', f:'tp-hotfix-20220817-3.6.3-b2.tar.gz'}]);</script>
+
 
 
                 <hr/>
